@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Taxi service areas from Kukke Subramanya - Mangalore, Dharmasthala, Udupi, Kateel, and more. Get distance, travel time, and instant booking.">
+    <meta name="keywords" content="Kukke to Mangalore taxi, Dharmasthala cab service, Udupi taxi booking, Karnataka cab routes">
+    <title>Service Areas - SHRI DURGAMBA CAB SERVICE | Places We Cover</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-om"></i>
+                SHRI DURGAMBA
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="places.html" class="active">Places</a></li>
+                <li><a href="testimonials.html">Reviews</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Service Areas & Destinations</h1>
+            <p>We provide reliable taxi services to all major destinations in Karnataka</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Places</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Places Section -->
+    <section class="places-page">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Popular Destinations</h2>
+                <p class="section-subtitle">Click on any destination to view details and book your cab</p>
+            </div>
+            
+            <div class="places-grid">
+                <!-- Kukke Subramanya -->
+                <div class="place-card scroll-fade" onclick="openPlaceModal('Kukke Subramanya', '0 km', 'Local Area', 'The sacred temple town where we are based. Perfect for temple visits and local tours.', 'fas fa-om')">
+                    <div class="place-image">
+                        <i class="fas fa-om"></i>
+                    </div>
+                    <div class="place-info">
+                        <h3>Kukke Subramanya</h3>
+                        <p>Sacred Temple Town</p>
+                        <div class="place-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> 0 km</span>
+                            <span><i class="fas fa-clock"></i> Local</span>
+                        </div>
+                    </div>
+                    <div class="place-hover-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>View Details</p>
+                    </div>
+                </div>
+
+                <!-- Mangalore -->
+                <div class="place-card scroll-fade" onclick="openPlaceModal('Mangalore', '105 km', '2.5 hours', 'Major coastal city with international airport. We provide reliable airport transfers and city tours.', 'fas fa-city')">
+                    <div class="place-image">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <div class="place-info">
+                        <h3>Mangalore</h3>
+                        <p>Coastal City & Airport</p>
+                        <div class="place-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> 105 km</span>
+                            <span><i class="fas fa-clock"></i> 2.5 hrs</span>
+                        </div>
+                    </div>
+                    <div class="place-hover-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>View Details</p>
+                    </div>
+                </div>
+
+                <!-- Dharmasthala -->
+                <div class="place-card scroll-fade" onclick="openPlaceModal('Dharmasthala', '25 km', '45 minutes', 'Famous pilgrimage center with the ancient Manjunatha Temple. Easily accessible from Kukke.', 'fas fa-place-of-worship')">
+                    <div class="place-image">
+                        <i class="fas fa-place-of-worship"></i>
+                    </div>
+                    <div class="place-info">
+                        <h3>Dharmasthala</h3>
+                        <p>Pilgrimage Center</p>
+                        <div class="place-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> 25 km</span>
+                            <span><i class="fas fa-clock"></i> 45 mins</span>
+                        </div>
+                    </div>
+                    <div class="place-hover-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>View Details</p>
+                    </div>
+                </div>
+
+                <!-- Udupi -->
+                <div class="place-card scroll-fade" onclick="openPlaceModal('Udupi', '85 km', '2 hours', 'Famous Sri Krishna Temple and beautiful beaches. Popular destination for pilgrims and tourists.', 'fas fa-gopuram')">
+                    <div class="place-image">
+                        <i class="fas fa-gopuram"></i>
+                    </div>
+                    <div class="place-info">
+                        <h3>Udupi</h3>
+                        <p>Krishna Temple & Beaches</p>
+                        <div class="place-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> 85 km</span>
+                            <span><i class="fas fa-clock"></i> 2 hrs</span>
+                        </div>
+                    </div>
+                    <div class="place-hover-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>View Details</p>
+                    </div>
+                </div>
+
+                <!-- Kateel -->
+                <div class="place-card scroll-fade" onclick="openPlaceModal('Kateel', '90 km', '2 hours', 'Historic Durga Parameshwari Temple on river island. Important spiritual destination.', 'fas fa-star-and-crescent')">
+                    <div class="place-image">
+                        <i class="fas fa-star-and-crescent"></i>
+                    </div>
+                    <div class="place-info">
+                        <h3>Kateel</h3>
+                        <p>Durga Temple</p>
+                        <div class="place-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> 90 km</span>
+                            <span><i class="fas fa-clock"></i> 2 hrs</span>
+                        </div>
+                    </div>
+                    <div class="place-hover-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>View Details</p>
+                    </div>
+                </div>
+
+                <!-- Temple Surroundings -->
+                <div class="place-card scroll-fade" onclick="openPlaceModal('Subramanya Temple Area', '5 km radius', '15-30 minutes', 'Explore beautiful spots around the temple including Adi Subramanya, Kumaradhara River, and nature trails.', 'fas fa-landmark')">
+                    <div class="place-image">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <div class="place-info">
+                        <h3>Temple Surroundings</h3>
+                        <p>Nearby Attractions</p>
+                        <div class="place-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> 5 km</span>
+                            <span><i class="fas fa-clock"></i> 15 mins</span>
+                        </div>
+                    </div>
+                    <div class="place-hover-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>View Details</p>
+                    </div>
+                </div>
+
+                <!-- Bangalore -->
+                <div class="place-card scroll-fade" onclick="openPlaceModal('Bangalore', '270 km', '6 hours', 'IT capital of India. We provide comfortable outstation taxi service to Bangalore.', 'fas fa-building')">
+                    <div class="place-image">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="place-info">
+                        <h3>Bangalore</h3>
+                        <p>IT Hub</p>
+                        <div class="place-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> 270 km</span>
+                            <span><i class="fas fa-clock"></i> 6 hrs</span>
+                        </div>
+                    </div>
+                    <div class="place-hover-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>View Details</p>
+                    </div>
+                </div>
+
+                <!-- Kollur -->
+                <div class="place-card scroll-fade" onclick="openPlaceModal('Kollur', '85 km', '2.5 hours', 'Famous Mookambika Temple in the Western Ghats. Perfect for pilgrimage tours.', 'fas fa-mountain')">
+                    <div class="place-image">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <div class="place-info">
+                        <h3>Kollur</h3>
+                        <p>Mookambika Temple</p>
+                        <div class="place-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> 85 km</span>
+                            <span><i class="fas fa-clock"></i> 2.5 hrs</span>
+                        </div>
+                    </div>
+                    <div class="place-hover-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>View Details</p>
+                    </div>
+                </div>
+
+                <!-- Coorg -->
+                <div class="place-card scroll-fade" onclick="openPlaceModal('Coorg', '95 km', '2.5 hours', 'Scotland of India with coffee plantations and scenic beauty. Popular tourist destination.', 'fas fa-tree')">
+                    <div class="place-image">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <div class="place-info">
+                        <h3>Coorg</h3>
+                        <p>Hill Station</p>
+                        <div class="place-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> 95 km</span>
+                            <span><i class="fas fa-clock"></i> 2.5 hrs</span>
+                        </div>
+                    </div>
+                    <div class="place-hover-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>View Details</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Routes -->
+    <section class="popular-routes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Popular Routes</h2>
+                <p class="section-subtitle">Most frequently traveled routes by our customers</p>
+            </div>
+            
+            <div class="routes-grid">
+                <div class="route-card scroll-fade">
+                    <div class="route-info">
+                        <i class="fas fa-route"></i>
+                        <div>
+                            <h4>Kukke ↔ Mangalore Airport</h4>
+                            <p>105 km • 2.5 hours • Airport Transfer</p>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-sm btn-primary">Book Now</a>
+                </div>
+                
+                <div class="route-card scroll-fade">
+                    <div class="route-info">
+                        <i class="fas fa-route"></i>
+                        <div>
+                            <h4>Kukke → Dharmasthala → Kukke</h4>
+                            <p>50 km round trip • Temple Visit</p>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-sm btn-primary">Book Now</a>
+                </div>
+                
+                <div class="route-card scroll-fade">
+                    <div class="route-info">
+                        <i class="fas fa-route"></i>
+                        <div>
+                            <h4>Kukke → Udupi → Mangalore</h4>
+                            <p>190 km • Pilgrimage Tour</p>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-sm btn-primary">Book Now</a>
+                </div>
+                
+                <div class="route-card scroll-fade">
+                    <div class="route-info">
+                        <i class="fas fa-route"></i>
+                        <div>
+                            <h4>Kukke ↔ Bangalore</h4>
+                            <p>270 km • 6 hours • Outstation</p>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-sm btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Don't See Your Destination?</h2>
+                <p>We cover many more locations! Contact us for custom routes and special requests</p>
+                <div class="cta-buttons">
+                    <a href="tel:+919482910204" class="btn btn-light">
+                        <i class="fas fa-phone"></i> Call: 09482910204
+                    </a>
+                    <a href="https://wa.me/919482910204" class="btn btn-success" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SHRI DURGAMBA CAB SERVICE</h3>
+                <p>Your trusted taxi service partner in Kukke Subramanya for pilgrims, tourists, and airport transfers.</p>
+                <div class="social-links">
+                    <a href="https://wa.me/919482910204" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.google.com/search?q=shri+durgamba+cab+service+kukke" target="_blank" title="Google"><i class="fab fa-google"></i></a>
+                    <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="places.html">Service Areas</a></li>
+                    <li><a href="testimonials.html">Reviews</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="services.html">Temple Taxi Service</a></li>
+                    <li><a href="services.html">Airport Transfers</a></li>
+                    <li><a href="services.html">Railway Station Pickup</a></li>
+                    <li><a href="services.html">Local Sightseeing</a></li>
+                    <li><a href="services.html">Outstation Cabs</a></li>
+                    <li><a href="services.html">Pilgrimage Tours</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +91 9482910204</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Near Anagha Lodge Aadi, Kukke Subramanya</li>
+                    <li><i class="fas fa-clock"></i> 24/7 Available</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 SHRI DURGAMBA CAB SERVICE. All rights reserved. | Taxi Service Kukke Subramanya | Cab Booking Karnataka</p>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <a href="https://wa.me/919482910204" class="fab fab-whatsapp" target="_blank" title="WhatsApp Booking">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+919482910204" class="fab fab-call" title="Call Now">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="contact.html" class="fab fab-chat" title="Contact Us">
+            <i class="fas fa-comment-dots"></i>
+        </a>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="placeModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-icon" id="modalIcon">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <div class="modal-details">
+                <div class="modal-detail-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Distance</strong>
+                        <p id="modalDistance"></p>
+                    </div>
+                </div>
+                <div class="modal-detail-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>Travel Time</strong>
+                        <p id="modalTime"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <a href="contact.html" class="btn btn-primary" style="width: 48%;" onclick="closeModal()">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                </a>
+                <a href="tel:+919482910204" class="btn btn-outline" style="width: 48%;">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
