@@ -131,7 +131,7 @@ This is a **complete 6-page professional taxi service website** with 3D animatio
 ## 🔧 Customization Guide
 
 ### Change Phone Number:
-Search and replace **09482910204** with your number in all HTML files
+Search and replace **+91 9482910204** with your number in all HTML files
 
 ### Change WhatsApp Number:
 Search and replace **919482910204** with your number (include country code without +)
